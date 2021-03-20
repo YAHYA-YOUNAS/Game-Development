@@ -5,12 +5,12 @@ using UnityEngine;
 public class ori : MonoBehaviour
 {
     public int speed = 3;
-    public Rigidbody2D rigidbody;
+    public Rigidbody2D rigidbody1;
    
     // Start is called before the first frame update
     void Start()
     {
-        rigidbody = GetComponent<Rigidbody2D>();
+        rigidbody1 = GetComponent<Rigidbody2D>();
         
     }
 
@@ -18,12 +18,15 @@ public class ori : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float move = Input.GetAxis("Horizontal");
-        Debug.Log("move");
-        rigidbody.velocity = new Vector3(move*speed, rigidbody.velocity.y, 0);
-        if (Input.GetKeyDown(KeyCode.Space))
+        float horizontalMove = Input.GetAxis("Horizontal");
+        Debug.Log("horizontalMove");
+        rigidbody1.velocity = new Vector2(horizontalMove * speed, rigidbody1.velocity.y);
+        float verticalMove = Input.GetAxis("Vertical");
+        rigidbody1.velocity = new Vector2(horizontalMove * speed, verticalMove * speed);
+
+        /*if (Input.GetKeyDown(KeyCode.Space))
         {
-            rigidbody.velocity = new Vector3(rigidbody.velocity.y, speed);
-        }
+            rigidbody1.velocity = new Vector3(rigidbody1.velocity.y, speed);
+        }*/
     }
 }
