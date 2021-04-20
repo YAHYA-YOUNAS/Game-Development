@@ -3,84 +3,172 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Executive Summary</title>
-    <style>
-        .header {
-            color: white;
-            background-color: rgb(29, 165, 243);
-            padding: 5px;
-            text-align: center;
-            width: 80%;
-            margin: 0 0 0 8%;
-            opacity: 1;
-        }
-        .container {
-            width: 80%; 
-            height: 650px;
-            margin: 0 0 0 8.5%;
-            background-color: rgb(218, 191, 132);
-        }
-        .container h1 { 
-            text-align: center; 
-        }
-        dt {
-            font-family: Arial, Helvetica, sans-serif; 
-            font-size: 20pt; 
-            font-weight: bold;
-            margin-left: 10px;
-        }
-        dd {
-            font-family: Arial, Helvetica, sans-serif; 
-            font-size: 12pt; 
-            text-align: justify; 
-            width: 90%; 
-        }
-        .footer { 
-            background-color: rgb(29, 165, 243); 
-            padding: 5px; 
-            text-align: center;             
-            width: 80%;
-            margin: 2% 0% 0 8.5%;
-            font-family: Arial, Helvetica, sans-serif;
-            font-weight: bold;
-            font-size: 12pt; 
-            color: white;
-        }
-    </style>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="images/1_6WwYMFwZAqIxFxrfT18-nA.jpeg">
+    <title>Game Design Document</title>
 </head>
 <body>
     <!----------------------------------- Header ------------------------------------------>
-    <div class="header">
+    <header>
         <h1>“ORI AND THE BLIND FOREST”</h1>
-    </div>
+    </header>
+
+    <!----------------------------------- Navigation ------------------------------------------>
+    <nav>
+        <a href="#exec">Executive Summary</a>
+        <a href="#gameplay">Gameplay</a>
+        <a href="#mechanics">Mechanics</a>
+        <a href="#game-elements">Game Elements</a>
+        <a href="#assets">Assets</a>
+        <a href="#conclusion">Conclusion</a>
+    </nav>
 
     <!----------------------------------- Main Content ------------------------------------------>
-    <div class="container text">
-        <h1>Executive Summary</h1>
-        <dl>
-            <dt>1. Game Concept:</dt><br>
-            <dd>The forest of Nibel is dying, after a powerful storm sets a series of devastating events in motion. An unlikely hero must journey to find his courage and confront a dark nemesis to save his home. “The Spirit Tree” who has some magical powers that can again give life to the forest. But due to devastating events in the forest, The Spirit Tree’s magical powers becomes weaken and required three elements (Water, Wind, Fire) to restore these magical powers. The hero must collect all the required three elements i.e., Water, Wind & fire and gives these elements to “The Spirit Tree”. After gaining all the magical powers, The Spirit Tree have to do a magic that recover the forest. Finally, the forest gains it greenery back and the hero secure his home as well as others forest species.  “Ori and the Blind Forest” explores a deeply emotional story about love a sacrifice, and the hope that exist in us all.</dd>
-            <br>
-            <dt>2. Genres:</dt>
-            <dd>
-                <ul type="circle">
-                    <li>Metroid Vania</li>
-                    <li>Fighting Game</li>
-                </ul>
-            </dd>
-            <br>
-            <dt>3. Target Audience:</dt><br>
-            <dd>The game “Ori and The Blind Forest” is 16+ game because it will contain emotional content.</p>
-            <br>
-            <dt>4. Project Scope:</dt><br>   
-            <dd>Ori and the Blind Forest is a 2D Metroidvania; a platform game with an emphasis on exploration, collecting items and upgrades, and backtracking to previously inaccessible areas. Our hero faces many hurdles while collecting elements i.e., water, wind & fire. These hurdles include fight with dragons etc. He must have to collect all the elements in a certain time to win this game. Our hero loses his energy with time. He must have to collect energy boost to refill his energy.</dd>
-        </dl>
+    <div class="main-container">
+        <article class="container" id="exec">
+            <h1>Executive Summary</h1>
+            <dl>
+                <dt>1. Game Concept:</dt><br>
+                <dd>The forest of Nibel is dying, after a powerful storm sets a series of devastating events in motion. An unlikely hero must journey to find his courage and confront a dark nemesis to save his home. “The Spirit Tree” who has some magical powers that can again give life to the forest. But due to devastating events in the forest, The Spirit Tree’s magical powers becomes weaken and required three elements (Water, Wind, Fire) to restore these magical powers. The hero must collect all the required three elements i.e., Water, Wind & fire and gives these elements to “The Spirit Tree”. After gaining all the magical powers, The Spirit Tree have to do a magic that recover the forest. Finally, the forest gains it greenery back and the hero secure his home as well as others forest species.  “Ori and the Blind Forest” explores a deeply emotional story about love a sacrifice, and the hope that exist in us all.</dd>
+                <br>
+                <dt>2. Genres:</dt>
+                <dd>
+                    <ul type="circle">
+                        <li>Metroid Vania</li>
+                        <li>Fighting Game</li>
+                    </ul>
+                </dd>
+                <br>
+                <dt>3. Target Audience:</dt>
+                <br>
+                <dd>The game “Ori and The Blind Forest” is 16+ game because it will contain emotional content.</dd>
+                <br>
+                <dt>4. Project Scope:</dt>
+                <br>   
+                <dd>Ori and the Blind Forest is a 2D Metroidvania; a platform game with an emphasis on exploration, collecting items and upgrades, and backtracking to previously inaccessible areas. Our hero faces many hurdles while collecting elements i.e., water, wind & fire. These hurdles include fight with dragons etc. He must have to collect all the elements in a certain time to win this game. Our hero loses his energy with time. He must have to collect energy boost to refill his energy.</dd>
+            </dl>
+        </article>
+        <article class="container" id="gameplay">
+            <h1>Gameplay</h1>
+            <dl>
+                <dt>1. Objectives:</dt><br>
+                <dd>
+                    <ul type="circle">
+                        <li>To survive the character “Ori” in the forest as he loses his energy with time.</li>
+                        <li>To collect the living elements that are Water, Wind, and fire from the forest.</li>
+                        <li>To provide all the living element to The Spirit Tree which revive the forest.</li>
+                    </ul>
+                </dd>
+                <br>
+                <dt>2. Game Progressions:</dt>
+                <dd>The game starts with a destroyed forest due to a thunderstorm. The character “Ori” lost his home due to the storm and wandering in the forest. During this situation, he found a tree with some supernatural abilities, spiritual power. As the forest is dying, there is a need of hero who can save the life of forest. Then, Ori start thinking about the survival of himself as well as the forest. He know about the tree and the spiritual power of tree which is weakened and can be revive with the help of living elements of life that is water, air, and fire. With the progression of levels, the game’s difficulty will line up with player’s ability. <br><br>
+                    Here the main story of game begins, Ori started his journey to collect the living elements. He has three paths with respect to three elements, he started his search for the elements in the forest. The forest is full of danger due to dragons which are hurdles in the path of the character of the game. After combatting with the dragons and getting energy from different resources, Ori become successful in the collection of elements. One level completes on the collection of required of any one element and second level begins afterwards. <br><br>
+                    After the collection of all elements, Ori get back to The Spiritual tree and give all the living elements to the game. The Tree get back to its life after empowerment of the living elements. At the end of the game, The Spiritual tree revive the life of the forest.
+                </dd>
+                <br>
+                <dt>3. In-game GUIs:</dt><br>
+                <dd>This section consists of all the GUIs used in the game. These layouts are designed in Figma. These are given below: <br><br>
+                    <ol>
+                        <li>Welcome</li>
+                        <li>Main Menu</li>
+                        <li>Gameplay</li>
+                        <li>Pause Menu</li>
+                        <li>Settings</li>
+                        <li>Message Window</li>
+                        <li>Confirmation Window</li>
+                    </ol> <br><br>
+                    <div class="layouts">
+                        <img src="images/GD Layouts/Welcome.png" alt="">
+                        <img src="images/GD Layouts/Main Menu.png" alt="">
+                        <img src="images/GD Layouts/Gameplay.png" alt="">
+                        <img src="images/GD Layouts/Pause Menu.png" alt="">
+                        <img src="images/GD Layouts/Settings.png" alt="">
+                        <img src="images/GD Layouts/Message Window.png" alt="">
+                        <img src="images/GD Layouts/Confirmation.png" alt="">
+                    </div>
+                </dd>
+            </dl>
+        </article>
+        <article class="container" id="mechanics">
+            <h1>Mechanics</h1>
+            <dl>
+                <dt>1. Rules:</dt><br>
+                <dd>
+                    <ul type="circle">
+                        <li>The power of Ori reduces with time, so he need energy boost to survive.</li>
+                        <li>Ori has to go through the combat against dragons to achieve living elements.</li>
+                        <li>Ori has to acquire specific units of water, air, and fire.</li>
+                        <li>The spiritual tree need living elements in order to revive the life of forest.</li>
+                        <li>Ori has limited weapons to fight with dragons.</li>
+                        <li>If weapons lost, Ori will have to fight with dragons only by hand.</li>
+                    </ul>
+                </dd>
+                <br>
+                <dt>2. Combat:</dt>
+                <dd>In this game, combat is simple. The player just pressed a button to shoot homing    bullets at nearby enemies. Fighting mostly meant being near enemy and spamming a button. Ori can also throw a giant energy lance. This is much slower than his bow, but it does a lot more damage. He can also throw a ball of light that explodes like a grenade. Not all of the abilities focus on combat. One can use up energy (the resource you need to use many of the moves) to restore health. Having all of these new tools make fights a lot more interesting.</dd>
+                <br>
+                <dt>3. Physics:</dt>
+                <br>
+                <dd>Physics is the base of any game. Like other Metroid Vania games, a lot of physics materials will be used for the movement of characters, animations in the scenes, etc. Some of the major physics elements used in the game are: <br><br>
+                    <ul type="circle">
+                        <li>Colliders on character and surfaces of scenes for the movement of the character.</li>
+                        <li>Colliders for the interaction between different characters.</li>
+                        <li>Colliders for the collection of game objects by the character.</li>
+                        <li>Mass and friction for the movement of the character.</li>
+                        <li>And many more…</li>
+                    </ul> <br><br>
+                    The core mechanic in the game is when Ori bashes projectiles, lanterns, or enemies, pushing them to one direction and pushing themselves to the opposite direction. <br><br>
+                    Apart from these mechanics-heavy interest curves, Ori also keeps its high level of interest through its gorgeous hand-painted worlds, orchestral music, and a deep story about love, growth, and sacrifice.
+                </dd>
+            </dl>
+            <figure>
+                <img class="game-image" src="images/Game.png" alt="">
+            </figure>
+        </article>
+        <article class="container" id="game-elements">
+            <h1>Game Elements</h1>
+            <dl>
+                <dt>1. Story:</dt><br>
+                <dd></dd>
+                <br>
+                <dt>2. Characters:</dt>
+                <dd></dd>
+                <br>
+                <dt>3. Locations:</dt>
+                <br>
+                <dd></dd>
+                <br>
+                <dt>4. Levels:</dt>
+                <br>   
+                <dd></dd>
+            </dl>
+        </article>
+        <article class="container" id="assets">
+            <h1>Assets</h1>
+            <dl>
+                <dt>1. Music:</dt><br>
+                <dd></dd>
+                <br>
+                <dt>2. Sound Effects:</dt>
+                <dd></dd>
+                <br>
+                <dt>3. 2D Models:</dt>
+                <br>
+                <dd></dd>
+            </dl>
+        </article>
+        <article class="container" id="conclusion">
+            <h1>Conclusion</h1> <br>
+            <p>In conclusion, Ori presents exceptionally strong aesthetics through the coherent combination of stunning visuals, immersive music, interesting and powerful abilities, controlled freedom, and carefully designed levels.</p>
+        </article>    
     </div>
 
-    <!----------------------------------- Header ------------------------------------------>
-    <div class="footer">
-        <p>Assignment 1 (Theory) By MUHAMMAD YAHYA YOUNAS (FA18-BSE-029) & MUHAMMAD BILAL KHAN (FA18-BSE-043)</p>
-    </div>
+    
+
+    </figure>
+    <footer>
+        <p>&copy; By MUHAMMAD YAHYA YOUNAS (FA18-BSE-029) & MUHAMMAD BILAL KHAN (FA18-BSE-043)</p>
+    </footer>
 </body>
     
 </html>
