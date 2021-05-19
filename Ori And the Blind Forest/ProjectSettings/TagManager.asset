@@ -44,6 +44,9 @@ TagManager:
   - name: Background
     uniqueID: 2039224419
     locked: 0
-  - name: Game Objects
+  - name: Midground
     uniqueID: 3934306361
+    locked: 0
+  - name: Foreground
+    uniqueID: 1523714269
     locked: 0
