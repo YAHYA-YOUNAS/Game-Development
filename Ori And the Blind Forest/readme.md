@@ -1,2 +1,0 @@
-“ORI AND THE BLIND FOREST”
-Ori and the Blind Forest is a 2D Metroidvania; a platform game with an emphasis on exploration, collecting items and upgrades, and backtracking to previously inaccessible areas. Our hero faces many hurdles while collecting elements i.e., water, wind & fire. These hurdles include fight with dragons etc. He must have to collect all the elements in a certain time to win this game. Our hero loses his energy with time. He must have to collect energy boost to refill his energy.
